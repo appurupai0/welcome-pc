@@ -206,16 +206,16 @@ header{
 }
 
 footer{
-	background-color: #2f4f4f;
+	background-color: #233f51;
 	font-size: 18px;
 	color: #fff;
 	padding: 5px 0;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
-.footer-right{
-	display: flex;
-	align-items: center;
-	margin-right: 20px;
+/*footerは書かなくてもよいが、別でクラス名がかぶっている可能性がある。それを防ぐための念押しでfooterの中のfooter-rightを指定してる*/
+footer .footer-right{
+	margin-right: 80px;
 }
