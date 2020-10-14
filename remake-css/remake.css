@@ -276,3 +276,34 @@ a{
 /*　タブレット　*/
 
 /*　スマホ　*/
+@media screen and (max-width: 480px){
+	body{
+		min-width: 375px;
+	}
+
+/* header */
+	.header-left{
+		margin-left: 20px;
+	}
+
+	.header-left .name{
+		display: none;
+	}
+
+/* main */
+
+
+/* recommended */
+	.img-box{
+		flex-flow: column nowrap;
+	}
+
+	.img li{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+/* footer */
+}
