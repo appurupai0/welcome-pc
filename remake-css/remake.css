@@ -1,5 +1,5 @@
 header{
-	background-color: #fa8072;
+	background-color: rgba(255,160,122,.7);
 	color: #fff;
 	padding: 5px 0;
 	display: flex;
@@ -154,8 +154,8 @@ a{
  }
 
  .img-box li img{
- 	height: 320px;
- 	width: 320px;
+ 	height: 310px;
+ 	width: 310px;
  	border-radius: 10px;
  	transition: 1.0s;
  	transform: rotate(0deg);
