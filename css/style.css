@@ -240,9 +240,23 @@ footer .footer-right{
 	}
 
 	/* header */
+	.icon{
+		margin-left: 20px;
+	}
+
+	.icon .name{
+		display: none;
+	}
+
+	.header-right{
+		display: none;
+	}
+	/* header　ここまで */
 
 	/* welcome */
-
+	.title{
+		font-size: 30px;
+	}
 	/* curriculum */
 	.img-box{
 		flex-flow: column nowrap;
