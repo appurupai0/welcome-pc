@@ -1,5 +1,5 @@
 header{
-	background-color: rgba(255,160,122,.7);
+	background-color: #bc8f8f;
 	color: #fff;
 	padding: 5px 0;
 	display: flex;
@@ -36,11 +36,19 @@ header{
 	justify-content: center;
 	align-items: center;
 	margin-right: 80px;
-	font-size: 20px;
+}
+
+.header-right li{
+	margin-left: 20px;
+}
+
+.header-right li img{
+	height: 40px;
+	width: 40px;
 }
 
 .header-right li:first-child{
-	margin-right: 40px;
+	margin-left: 0;
 }
 
 .main{
