@@ -156,6 +156,21 @@ a{
  .img-box li img{
  	height: 320px;
  	width: 320px;
+ 	border-radius: 10px;
+ 	transition: 1.0s;
+ 	transform: rotate(0deg);
+ }
+
+ .img-box li :hover img{
+ 	transform: rotateY( 180deg);
+ }
+
+ .img2:hover img{
+ 	transform: rotateY( 180deg);
+ }
+
+ .img3:hover img{
+ 	transform: rotateY( 180deg);
  }
 
  .img-box span{
