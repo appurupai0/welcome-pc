@@ -155,54 +155,46 @@ header{
 /*----curriculum ここまで----*/
 
 /*---contact---*/
-.contact{
-	height: 350px;
-	margin-top: 50px;
-	background-color: #ebf4f5;
+.contact {
+  text-align: center;
+  background-color: #ebf4f5;
+  margin-top: 50px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.subtitle{
-	padding-top:20px;
+
+.form{
+  display: flex;
+  justify-content: center;
 }
 
-.contact-box{
-	margin-top: 50px;
-	display: flex;
-	justify-content: center;
+.form .name,.form .email{
+  height: 50px;
+  width: 400px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-.align input{
-	width: 430px;
-	height: 40px;
-	line-height: 40px;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 30px;
+.form .name{
+  margin-bottom: 20px;
 }
 
-.input-field2{
-	margin-left: 30px;
-	width: 430px;
-	height: 100px;
+.contact .form{
+  margin: 50px 0 40px;
 }
 
-.form-btn{
-	display: flex;
-	justify-content: center;
+.form-left{
+  margin-right: 50px;
 }
 
-.submit{
-	font-size: 20px;
-	color: #fff;
-	background-color: rgba(29, 172, 224,.5);
-	border: 3px solid rgba(29, 172, 224,.3);
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.submit:hover{
-	background-color: rgb(29,172,224);
+.inquiry{
+  height: 120px;
+  width: 400px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 footer{
@@ -305,7 +297,31 @@ footer .footer-right{
 		font-size: 16px;
 		margin-top: 20px;
 	}
-	/* contact */
 
+	/* contact */
+	.contact .form{
+		flex-flow: column nowrap;
+		margin: 30px 0;
+	}
+
+	.form .name, .form .email, .form .inquiry{
+		width: 80%;
+	}
+
+	.form .name, .form .email{
+		height: 30px;
+	}
+
+	.form .inquiry{
+		height: 50px;
+	}
+
+	.form-left{
+		margin-right: 0px;
+	}
+
+	.form-right{
+		margin-top: 20px;
+	}
 	/* footer */
 }
