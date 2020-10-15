@@ -233,9 +233,53 @@ footer .footer-right{
 }
 
 /*　タブレット　*/
-/*@media screen and (max-width: 960px){
+@media screen and (max-width: 960px){
+	/* welcome */
 
-}*/
+	/* curriculum */
+	.img-box{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.img-box li:last-child{
+		margin-top: 25px;
+	}
+	/* contact */
+	.contact .subtitle{
+		font-size: 28px;
+	}
+
+	.contact .form{
+		flex-flow: column nowrap;
+		margin: 23px 0 20px;
+	}
+
+	.form .name, .form .email, .form .inquiry{
+		width: 80%;
+	} 
+
+	.form .name, .form .email{
+		height: 35px;
+	}
+
+	.form .inquiry{
+		height: 80px;
+	}
+
+	.form-left{
+		margin-right: 0;
+	}
+
+	.form-right{
+		margin-top: 20px;
+	}
+
+	.contact button{
+		font-size: 20px;
+		padding: 5px 40px;
+	}
+}
 /*　スマフォ　*/
 @media screen and (max-width: 480px){
 	body{
