@@ -248,16 +248,17 @@ a{
 
 .footer{
 	color: #fff;
-	background-color: #696969;
+	background-color: #bc8f8f;
 	display: flex;
 	justify-content: space-between;
+	padding: 5px 0;
 }
 
 .footer-right{
 	font-size: 20px;
 	display: flex;
 	align-items: center;
-	margin-right: 30px;
+	margin-right: 70px;
 }
 
 
