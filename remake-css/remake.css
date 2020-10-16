@@ -1,9 +1,11 @@
 header{
-	background-color: #bc8f8f;
+	background-color: rgba(221, 160, 221,.8);
 	color: #fff;
+	height: 60px;
 	padding: 5px 0;
 	display: flex;
 	justify-content: space-between;
+	z-index: 1;
 }
 
 .fixed{
@@ -22,9 +24,8 @@ header{
 .header-left span strong{
 	color: blue;
 }
-.header-left img{
-	height: 60px;
-	width: 60px;
+.header-left i{
+	font-size: 40px;
 	margin-left: 70px;
 	margin-right: 20px;
 	display: flex;
@@ -42,9 +43,9 @@ header{
 	margin-left: 20px;
 }
 
-.header-right li img{
-	height: 40px;
-	width: 40px;
+.header-right li .icon{
+	font-size: 40px;
+	color: #00008b;
 }
 
 .header-right li:first-child{
@@ -61,7 +62,7 @@ header{
 	color: #fff;
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-top: 70px;
+	margin-top: 60px;
 	font-family: cursive;
 }
 
@@ -248,7 +249,8 @@ a{
 
 .footer{
 	color: #fff;
-	background-color: #bc8f8f;
+	background-color: #ff69b4;
+	height: 65px;
 	display: flex;
 	justify-content: space-between;
 	padding: 5px 0;
