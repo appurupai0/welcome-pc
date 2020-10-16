@@ -240,6 +240,11 @@ footer .footer-right{
 	.img-box{
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.img-box li{
+		margin-right: 0;
 	}
 
 	.img-box li:last-child{
