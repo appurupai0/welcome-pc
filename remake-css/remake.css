@@ -205,41 +205,63 @@ a{
  }
 
 .contact-us{
-	font-size: 35px;
+	font-size: 25px;
 	font-weight: bold;
 	font-family: cursive;
-	padding-top: 25px;
+	padding-top: 20px;
 	text-align: center;
 }
 
 .form-contact{
 	display: flex;
 	justify-content: center;
+	margin-top: 15px;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form p{
+	line-height: 18px;
+	font-size: 15px;
+}
+
+.form p:first-child{
+	margin-top: 17px;
+}
+
+.phone{
 	margin-top: 20px;
 }
 
-.form-contact li:first-child{
-	display: flex;
-	flex-direction: column;
-	margin-right: 60px;
+.phone-icon{
+	font-size: 26px;
+	margin-right: 20px;
+	color: #ff1493;
 }
 
-.input-field{
-	height: 35px;
-	width: 450px;
-	margin-top: 40px;
+.phone-number{
+	font-size: 26px;
+	font-weight: bold;
+	color: #ff1493;
 }
 
-.input-field2{
-	height: 115px;
-	width: 450px;
-	margin-top: 40px;
+.input{
+	margin-top: 18px;
+}
+
+.opinion{
+	height: 40px;
+	width: 165px;
 }
 
 .form-btn{
 	display: flex;
 	justify-content: center;
-	margin-top: 35px;
+	margin: 20px 0 17px;
 }
 
 .submit{
