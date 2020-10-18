@@ -504,7 +504,24 @@ a{
 	}
 }
 /*　タブレット　*/
+@media screen and(max-width: 960px){
+	.menu{
+		width: 100%;
+	}
 
+	.gallery img{
+		height: 140px;
+		width: 180px;
+	}
+
+	.footer li{
+		font-size: 13px;
+	}
+
+	.footer-right{
+		font-size: 13px;
+	}
+}
 /*　スマホ　*/
 @media screen and (max-width: 480px){
 	body{
