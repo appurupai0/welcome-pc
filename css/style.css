@@ -40,6 +40,85 @@ header{
 .header-right li:first-child{
 	margin-right: 20px;
 }
+
+	/* funberger menu */
+	.hamburger {
+  width: 28px;
+  height: 30px;
+  margin: 30px auto 10px;
+}
+
+.hamburger span:after,
+.hamburger span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+
+.hamburger span:after {
+  top: 9px;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+}
+
+.hamburger span,
+.hamburger span:after,
+.hamburger span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  transition: all 0.5s; /*←アニメーション*/
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.hamburger.on span {
+  background-color: transparent;
+}
+
+.hamburger.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#q7-btn{
+	display: none;
+}
+
+.drower{
+	position: absolute;
+	top: 80px;
+	height: 100vh;
+	width: 200px;
+	background-color: rgba(8,8,8,.5);
+	transition-duration: 600ms;
+	right: -200px;
+}
+
+#drower-bg {
+    display: none;
+    /* position: fixed でそのドロワーの背景を固定（スクロールしてもずっと表示されている形にしている）*/
+    position: fixed;
+    /*　右、左、下をそれぞれ０にすることによって画面全体にドロワーｂｇのdivタグが表示されるようになっている*/
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.drower.on{
+	right: 0;
+	transition-duration: 600ms;
+}
+
 /*-----header ここまで-----*/
 
 /*---welcome---*/
@@ -230,10 +309,20 @@ footer .footer-right{
 	.img-box li{
 		margin-right: 30px;
 	}
+
+	/* header */
+	#q7-btn{
+		display: none;
+	}
 }
 
 /*　タブレット　*/
 @media screen and (max-width: 960px){
+	/* header */
+	#q7-btn{
+		display: none;
+	}
+
 	/* welcome */
 
 	/* curriculum */
@@ -292,6 +381,14 @@ footer .footer-right{
 	}
 
 	/* header */
+	#q7-btn{
+		display: block;
+		display: flex;
+		flex: end;
+		margin-right: 35px;
+	}
+
+
 	.icon{
 		margin-left: 20px;
 	}
@@ -303,6 +400,8 @@ footer .footer-right{
 	.header-right{
 		display: none;
 	}
+
+
 	/* header　ここまで */
 
 	/* welcome */

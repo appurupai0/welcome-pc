@@ -560,15 +560,21 @@ a{
 	}
 
 	.footer li{
-		font-size: 13px;
+		font-size: 15px;
+		margin-left: 20px;
+	}
+
+	.footer li:first-child{
+		margin-left: 0;
 	}
 
 	.footer-right{
-		font-size: 13px;
+		font-size: 15px;
 	}
 }
+
 /*　タブレット　*/
-@media screen and(max-width: 960px){
+@media screen and (max-width: 960px){
 	.menu{
 		width: 100%;
 	}
@@ -576,6 +582,10 @@ a{
 	.gallery img{
 		height: 140px;
 		width: 180px;
+	}
+
+	.form-feild{
+		width: 70%;
 	}
 
 	.footer li{
@@ -586,6 +596,7 @@ a{
 		font-size: 13px;
 	}
 }
+
 /*　スマホ　*/
 @media screen and (max-width: 480px){
 	body{
@@ -593,6 +604,6 @@ a{
 	}
 
 	.form-field{
-		width: 90%;
+		width: 80%;
 	}
 }
